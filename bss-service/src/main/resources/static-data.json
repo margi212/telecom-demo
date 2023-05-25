@@ -1,0 +1,20 @@
+{
+  "1": {
+    "userId": 1,
+    "dataBalance": 5,
+    "voiceBalance": 5,
+    "smsBalance": 5
+  },
+  "2": {
+    "userId": 2,
+    "dataBalance": 4,
+    "voiceBalance": 4,
+    "smsBalance": 4
+  },
+  "3": {
+    "userId": 3,
+    "dataBalance": 6,
+    "voiceBalance": 6,
+    "smsBalance": 6
+  }
+}

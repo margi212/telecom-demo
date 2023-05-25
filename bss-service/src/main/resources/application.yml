@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bss-service
+    version: 1.0
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://service-registry:8761/eureka
+      fetch-registry: true
+      register-with-eureka: true
+server:
+  port: 8085

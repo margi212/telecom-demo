@@ -1,0 +1,26 @@
+server:
+  port: 8090
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+spring:
+  application:
+    name: api-gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: ums-service
+          uri: lb://ums-service
+          predicates:
+            - Path=/api/v1/ums/**
+        - id: bss-service
+          uri: lb://bss-service
+          predicates:
+            - Path=/api/v1/bss/**
